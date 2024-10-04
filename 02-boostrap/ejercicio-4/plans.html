@@ -16,7 +16,7 @@
           Bootstrap
         </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -26,10 +26,10 @@
               <a class="nav-link" href="home.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="galeria.html">Catalogo</a>
+              <a class="nav-link active" href="galeria.html">Catalogo</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link active" href="plans.html">Tarifas</a>
+              <a class="nav-link" href="plans.html">Tarifas</a>
             </li>
           </ul>
           <form class="d-flex my-2 my-lg-0" role="search">
@@ -42,58 +42,127 @@
 
     <!-- Content -->
     <div class="container">
-        <div class="row row-cols-1 row-cols-3">
-            <div class="card">
-                <div class="card-header">Por uso</div>
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title text-center">25h/mes</h2>
-                    <div class="card-text m-2 text-center"> 25€ al año y 30 céntimos por cada 30 minutos </div>
-                    <a class="btn btn-primary" role="button" href="#">Más información</a>
-                </div>
+      <div class="row mt-2">
+        <div class="col text-center">
+          <div class="row">
+            <div class="col">
+              <h1>Tarifas</h1>
             </div>
-            <div class="card">
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title text-center">Plana</h2>
-                    <div class="card-text m-2 text-center"> 40€ al año y 30 céntimos por cada hora </div>
-                    <a class="btn btn-primary" role="button" href="#">Más información</a>
-                </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nunc.
+                Nunc fermentum lectus id ex tempor viverra. Donec nec dui tortor. Phasellus convallis, ligula eu volutpat sollicitudin.
+              </p>
             </div>
-            <div class="card">
-                <div class="card-body d-flex flex-column">
-                    <h2 class="card-title text-center">Premium</h2>
-                    <div class="card-text m-2 text-center"> 70€ al año </div>
-                    <a class="btn btn-primary" role="button" href="#">Más información</a>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center py-3 mt-md-6">
+          <div class="col p-2">
+            <div class="card h-100 rounded-3 shadow">
+              <div class="card-header">
+                Por uso
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">25€/año</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nunc.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col p-2">
+            <div class="card h-100 rounded-3 shadow">
+              <div class="card-header">
+                Plana
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">50€/año</h5>
+                <p class="card-text">
+                  Nunc fermentum lectus id ex tempor viverra. Donec nec dui tortor. Phasellus convallis, ligula eu volutpat sollicitudin.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col p-2">
+            <div class="card h-100 rounded-3 shadow border-primary">
+              <div class="card-header text-bg-primary">
+                Premium
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">100€/año</h5>
+                <p class="card-text">
+                  Cras at sem orci. Proin porta mattis nulla eget malesuada. In sed urna ac purus tempus bibendum.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+            
+      </div>
       <div class="row">
-        <div class="col text-center my-4"> ¿Aún no tienes cuenta? Registrate aqui </div>
+        <div class="col text-center my-2"> <i class="fa-solid fa-down-long"></i> ¿Aún no tienes cuenta? Registrate aqui <i class="fa-solid fa-down-long"></i> </div>
       </div>
       <!-- Form -->
       <div class="row">
         <div class="col my-4">
             <form>
-                <div class="row mb-3">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail3">
-                  </div>
+              <div class="row mb-3">
+                <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputName">
                 </div>
-                <div class="row mb-3">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3">
-                  </div>
+              </div> 
+
+              <div class="row mb-3">
+                <label for="" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail">
                 </div>
-                <fieldset class="row mb-3">
-                </fieldset>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </form>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+              </div>
+              
+              <div class="row mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Talla</label>
+                <div class="col-sm-10">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Selecciona tu talla
+                  </button>
+                  <ul class="dropdown-menu w-100">
+                    <li><a class="dropdown-item">XS</a></li>
+                    <li><a class="dropdown-item">S</a></li>
+                    <li><a class="dropdown-item">M</a></li>
+                    <li><a class="dropdown-item">L</a></li>
+                    <li><a class="dropdown-item">XL</a></li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col col-md-6 mt-md-5">
+                  <button type="submit" class="btn btn-primary w-100">Registro</button>
+                </div>
+              </div>
+            </form>
         </div>
       </div>
     </div>
     <!-- Footer -->
-    <footer class="bg-dark text-center text-lg-start text-light">
+    <footer class="bg-dark text-center text-lg-start text-light fixed-bottom">
       <div class="text-center p-3">
         © 2024 Copyright
       </div>
